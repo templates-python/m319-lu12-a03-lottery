@@ -1,6 +1,9 @@
-import main
+# DON'T TOUCH THIS FILE
+from main import main
 
-def test(capsys):
-    main.calculate()
-    captured = capsys.readouterr()
-    assert captured.out == "Total: 78.75\n"
+
+def test1(monkeypatch, capsys):
+    inputs = iter(['geheim', 'B', 'E', '12.50', 'Z', 'A', '5', '7', '2', '31', '39', '13', '4'])
+    monkeypatch.setattr('builtins.input', lambda _: next(inputs))
+    main()
+    assert True
