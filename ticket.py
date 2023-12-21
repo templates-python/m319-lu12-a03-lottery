@@ -1,9 +1,16 @@
+from dataclasses import dataclass
+
+
+@dataclass
 class Ticket:
     """
-    TODO short description
+    A lottery ticket with a list of numbers and the joker
     """
-    pass
+    numbers: list
+    joker: int
 
 
 if __name__ == '__main__':
-    pass
+    my_numbers = [1,17,8,32]
+    ticket = Ticket(my_numbers, 7)
+    print (ticket)

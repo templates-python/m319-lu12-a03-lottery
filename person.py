@@ -1,9 +1,17 @@
+from dataclasses import dataclass
+
+
+@dataclass
 class Person:
     """
-    TODO short description
+    A person playing the lottery
     """
-    pass
+    name: str
+    password: str
+    balance: float
 
 
 if __name__ == '__main__':
-    pass
+    # used for testing
+    person = Person('Hans', 'test', 25.75)
+    print (person)

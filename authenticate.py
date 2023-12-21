@@ -2,7 +2,16 @@ from person import Person
 
 
 def login():
-    pass
+    people = load_people()
+    password = input('Passwort > ')
+    for person in people:
+        if password == person.password:
+            return person
+
+    return None
+
+
+
 
 
 def load_people():
