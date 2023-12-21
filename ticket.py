@@ -13,4 +13,5 @@ class Ticket:
 if __name__ == '__main__':
     my_numbers = [1,17,8,32]
     ticket = Ticket(my_numbers, 7)
-    print (ticket)
+    assert 17 in ticket.numbers
+    assert ticket.joker == 7

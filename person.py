@@ -14,4 +14,6 @@ class Person:
 if __name__ == '__main__':
     # used for testing
     person = Person('Hans', 'test', 25.75)
-    print (person)
+    assert person.name == 'Hans'
+    assert person.password == 'test'
+    assert person.balance == 25.75

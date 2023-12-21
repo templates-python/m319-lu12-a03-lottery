@@ -11,9 +11,6 @@ def login():
     return None
 
 
-
-
-
 def load_people():
     """
     loads the list of people
@@ -27,4 +24,5 @@ def load_people():
 
 
 if __name__ == '__main__':
-    pass
+    person = login()
+    assert person is None
