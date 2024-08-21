@@ -1,0 +1,14 @@
+{
+  "files": [
+    "lottery.py",
+    "numeric_input.py",
+    "ticket.py",
+    "person.py",
+    "money.py",
+    "menu.py",
+    "authenticate.py",
+    "main.py"
+  ],
+  "ignore": [],
+  "max": 5
+}
